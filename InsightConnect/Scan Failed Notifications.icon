@@ -1,0 +1,775 @@
+{
+  "kom": {
+    "komandVersion": "1.176.4-0-gb65a8",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2023-12-29T17:31:07.963390878Z",
+    "workflowVersions": [
+      {
+        "name": "Scan Failed Notifications",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "53609168-84c2-4d45-9daf-445c02e08095": {
+              "id": "53609168-84c2-4d45-9daf-445c02e08095",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "8a037451-61da-4947-bc4a-dbd7c0b1d5ca",
+              "toNodeId": ""
+            },
+            "e118f9d9-4a5f-4acb-9170-43955c79899d": {
+              "id": "e118f9d9-4a5f-4acb-9170-43955c79899d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "a4b6855b-ab85-4846-b80e-cc2e5e5b8da1",
+              "toNodeId": "8a037451-61da-4947-bc4a-dbd7c0b1d5ca"
+            }
+          },
+          "nodes": {
+            "8a037451-61da-4947-bc4a-dbd7c0b1d5ca": {
+              "id": "8a037451-61da-4947-bc4a-dbd7c0b1d5ca",
+              "parentNodeId": ""
+            },
+            "a4b6855b-ab85-4846-b80e-cc2e5e5b8da1": {
+              "id": "a4b6855b-ab85-4846-b80e-cc2e5e5b8da1",
+              "parentNodeId": ""
+            }
+          }
+        },
+        "steps": {
+          "8a037451-61da-4947-bc4a-dbd7c0b1d5ca": {
+            "nodeId": "8a037451-61da-4947-bc4a-dbd7c0b1d5ca",
+            "name": "Teams Message",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Teams",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_teams",
+              "slugVersion": "6.0.0",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_teams/6.0.0/icon.png"
+            },
+            "identifier": "send_html_message",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "channel_name": "{{[$workflow].[Channel Name]}}",
+                "message_content": "<h1 style=\"color: red; font-weight: bold;\">Scan Failed!</h1><br>\n<b>{{[a4b6855b-ab85-4846-b80e-cc2e5e5b8da1].[scan].[scanName]}}</b><br>\n<b>Site:</b> {{[a4b6855b-ab85-4846-b80e-cc2e5e5b8da1].[scan].[siteName]}}<br>\n<b>StartTime:</b> {{[a4b6855b-ab85-4846-b80e-cc2e5e5b8da1].[scan].[startTime]}}<br>\n<b>EndTime:</b> {{[a4b6855b-ab85-4846-b80e-cc2e5e5b8da1].[scan].[endTime]}}",
+                "team_name": "{{[$workflow].[Team Name]}}",
+                "thread_id": ""
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "channel_name": {
+                  "description": "Channel name",
+                  "order": 2,
+                  "title": "Channel Name",
+                  "type": "string"
+                },
+                "message_content": {
+                  "description": "HTML content to send",
+                  "order": 4,
+                  "title": "Message Content",
+                  "type": "string"
+                },
+                "team_name": {
+                  "description": "Team name",
+                  "order": 1,
+                  "title": "Team Name",
+                  "type": "string"
+                },
+                "thread_id": {
+                  "description": "To post in a thread, select parent message ID",
+                  "order": 3,
+                  "title": "Thread ID",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "team_name",
+                "channel_name",
+                "message_content"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "body": {
+                  "properties": {
+                    "content": {
+                      "description": "Content",
+                      "order": 1,
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "contentType": {
+                      "description": "Content type",
+                      "order": 2,
+                      "title": "Content Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Body",
+                  "type": "object"
+                },
+                "channelIdentity": {
+                  "properties": {
+                    "channelId": {
+                      "description": "The identity of the channel in which the message was posted",
+                      "order": 1,
+                      "title": "Channel ID",
+                      "type": "string"
+                    },
+                    "teamId": {
+                      "description": "The identity of the team in which the message was posted",
+                      "order": 2,
+                      "title": "Team ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "ChannelIdentity",
+                  "type": "object"
+                },
+                "from": {
+                  "properties": {
+                    "user": {
+                      "$ref": "#/definitions/user",
+                      "description": "User",
+                      "order": 1,
+                      "title": "User"
+                    }
+                  },
+                  "title": "From",
+                  "type": "object"
+                },
+                "message": {
+                  "properties": {
+                    "body": {
+                      "$ref": "#/definitions/body",
+                      "description": "Body",
+                      "order": 1,
+                      "title": "Body"
+                    },
+                    "channelIdentity": {
+                      "$ref": "#/definitions/channelIdentity",
+                      "description": "Represents identity of the channel",
+                      "order": 11,
+                      "title": "Channel Identity"
+                    },
+                    "createdDateTime": {
+                      "description": "Created date time",
+                      "order": 3,
+                      "title": "Created Date Time",
+                      "type": "string"
+                    },
+                    "first_word": {
+                      "description": "Extracted first word from message (easy way to obtain a chat command)",
+                      "order": 9,
+                      "title": "First Word",
+                      "type": "string"
+                    },
+                    "from": {
+                      "$ref": "#/definitions/from",
+                      "description": "From",
+                      "order": 2,
+                      "title": "From"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 8,
+                      "title": "ID",
+                      "type": "string"
+                    },
+                    "importance": {
+                      "description": "Importance",
+                      "order": 5,
+                      "title": "Importance",
+                      "type": "string"
+                    },
+                    "locale": {
+                      "description": "Locale",
+                      "order": 7,
+                      "title": "Locale",
+                      "type": "string"
+                    },
+                    "messageType": {
+                      "description": "Message type",
+                      "order": 6,
+                      "title": "Message Type",
+                      "type": "string"
+                    },
+                    "webUrl": {
+                      "description": "Web URL",
+                      "order": 4,
+                      "title": "Web URL",
+                      "type": "string"
+                    },
+                    "words": {
+                      "description": "The message split by spaces into a list of words. This list makes finding and using parameters in chat commands easier",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 10,
+                      "title": "Words",
+                      "type": "array"
+                    }
+                  },
+                  "title": "Message",
+                  "type": "object"
+                },
+                "user": {
+                  "properties": {
+                    "displayName": {
+                      "description": "Display name",
+                      "order": 1,
+                      "title": "Display name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID",
+                      "order": 2,
+                      "title": "ID",
+                      "type": "string"
+                    }
+                  },
+                  "title": "User",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "message": {
+                  "$ref": "#/definitions/message",
+                  "description": "The message object that was created",
+                  "order": 1,
+                  "title": "Message"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "a4b6855b-ab85-4846-b80e-cc2e5e5b8da1": {
+            "nodeId": "a4b6855b-ab85-4846-b80e-cc2e5e5b8da1",
+            "name": "Audit Scans",
+            "type": "trigger",
+            "plugin": {
+              "name": "Rapid7 InsightVM Console",
+              "slugVendor": "rapid7",
+              "slugName": "rapid7_insightvm",
+              "slugVersion": "6.1.0",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/6.1.0/icon.png"
+            },
+            "identifier": "new_scans",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "frequency": 5,
+                "most_recent_scan": true,
+                "site_name_filter": ".*",
+                "status_filter": [
+                  "Failed"
+                ]
+              }
+            },
+            "triggerId": "3130ca49-10e7-4273-82c3-8cc2f378c60d",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "frequency": {
+                  "default": 5,
+                  "description": "How often the trigger should check for new scans in minutes",
+                  "order": 1,
+                  "title": "Frequency",
+                  "type": "integer"
+                },
+                "most_recent_scan": {
+                  "default": true,
+                  "description": "Only process the most recent scan for a site since the last time the trigger was run",
+                  "order": 3,
+                  "title": "Most Recent Scan Only",
+                  "type": "boolean"
+                },
+                "site_name_filter": {
+                  "default": ".*",
+                  "description": "Regular expression to match sites where new scans should be triggered",
+                  "order": 2,
+                  "title": "Site Name Filter",
+                  "type": "string"
+                },
+                "status_filter": {
+                  "default": "[\"Successful\"]",
+                  "description": "List of scan statuses to match for trigger; options include: Aborted, Successful, Running, Stopped, Failed, Paused, Unknown",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 4,
+                  "title": "Status Filter",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "frequency",
+                "site_name_filter",
+                "most_recent_scan"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "link": {
+                  "properties": {
+                    "href": {
+                      "description": "A hypertext reference, which is either a URI (see RFC 3986) or URI template (see RFC 6570)",
+                      "order": 1,
+                      "title": "URL",
+                      "type": "string"
+                    },
+                    "rel": {
+                      "description": "Link relation type following RFC 5988",
+                      "order": 2,
+                      "title": "Rel",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Link",
+                  "type": "object"
+                },
+                "scan": {
+                  "properties": {
+                    "assets": {
+                      "description": "Count of assets identified during the scan",
+                      "order": 3,
+                      "title": "Assets",
+                      "type": "integer"
+                    },
+                    "duration": {
+                      "description": "Duration of the scan",
+                      "displayType": "date",
+                      "format": "date-time",
+                      "order": 11,
+                      "title": "Duration",
+                      "type": "string"
+                    },
+                    "endTime": {
+                      "description": "End time of the scan",
+                      "displayType": "date",
+                      "format": "date-time",
+                      "order": 14,
+                      "title": "End Time",
+                      "type": "string"
+                    },
+                    "engineId": {
+                      "description": "ID for the scan engine/scan engine pool used for the scan",
+                      "order": 8,
+                      "title": "Engine ID",
+                      "type": "integer"
+                    },
+                    "engineName": {
+                      "description": "Name of the scan engine/scan engine pool used for the scan",
+                      "order": 12,
+                      "title": "Engine Name",
+                      "type": "string"
+                    },
+                    "id": {
+                      "description": "ID of the scan",
+                      "order": 15,
+                      "title": "ID",
+                      "type": "integer"
+                    },
+                    "links": {
+                      "description": "List of hypermedia links to corresponding resources",
+                      "items": {
+                        "$ref": "#/definitions/link"
+                      },
+                      "order": 4,
+                      "title": "Links",
+                      "type": "array"
+                    },
+                    "message": {
+                      "description": "Scan status message",
+                      "order": 13,
+                      "title": "Message",
+                      "type": "string"
+                    },
+                    "scanName": {
+                      "description": "Name of the scan",
+                      "order": 16,
+                      "title": "Scan Name",
+                      "type": "string"
+                    },
+                    "scanType": {
+                      "description": "Type of scan (automated, manual, scheduled)",
+                      "order": 2,
+                      "title": "Scan Type",
+                      "type": "string"
+                    },
+                    "siteId": {
+                      "description": "ID of the site scanned",
+                      "order": 9,
+                      "title": "Site ID",
+                      "type": "integer"
+                    },
+                    "siteName": {
+                      "description": "Name of the site scanned",
+                      "order": 5,
+                      "title": "Site Name",
+                      "type": "string"
+                    },
+                    "startTime": {
+                      "description": "Start time for the scan",
+                      "displayType": "date",
+                      "format": "date-time",
+                      "order": 10,
+                      "title": "Start Time",
+                      "type": "string"
+                    },
+                    "startedBy": {
+                      "description": "User that started the scan",
+                      "order": 7,
+                      "title": "Started By",
+                      "type": "string"
+                    },
+                    "status": {
+                      "description": "Scan status (aborted, unknown, running, finished, stopped, error, paused, dispatched, integrating)",
+                      "order": 1,
+                      "title": "Status",
+                      "type": "string"
+                    },
+                    "vulnerabilities": {
+                      "$ref": "#/definitions/vulnerabilities_count",
+                      "description": "Counts of vulnerabilities identified during the scan",
+                      "order": 6,
+                      "title": "Vulnerabilities"
+                    }
+                  },
+                  "title": "Scan",
+                  "type": "object"
+                },
+                "vulnerabilities_count": {
+                  "properties": {
+                    "critical": {
+                      "description": "Number of critical vulnerabilities",
+                      "order": 1,
+                      "title": "Critical",
+                      "type": "integer"
+                    },
+                    "moderate": {
+                      "description": "Number of moderate vulnerabilities",
+                      "order": 2,
+                      "title": "Moderate",
+                      "type": "integer"
+                    },
+                    "severe": {
+                      "description": "Number of severe vulnerabilities",
+                      "order": 3,
+                      "title": "Severe",
+                      "type": "integer"
+                    },
+                    "total": {
+                      "description": "Total",
+                      "order": 4,
+                      "title": "Total number of vulnerabilities",
+                      "type": "integer"
+                    }
+                  },
+                  "title": "Vulnerabilities Count",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "scan": {
+                  "$ref": "#/definitions/scan",
+                  "description": "InsightVM Scan",
+                  "order": 1,
+                  "title": "Scan"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "CONNECTION",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          }
+        },
+        "tags": [
+          "Alerting & Notifications"
+        ],
+        "humanCostSeconds": 600,
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Team Name": {
+                "type": "string",
+                "description": ""
+              },
+              "Channel Name": {
+                "type": "string",
+                "description": ""
+              }
+            },
+            "definitions": {}
+          }
+        },
+        "summary": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "3130ca49-10e7-4273-82c3-8cc2f378c60d",
+        "identifier": "new_scans",
+        "name": "Audit Scans",
+        "description": "",
+        "input": {
+          "frequency": 5,
+          "most_recent_scan": true,
+          "site_name_filter": ".*",
+          "status_filter": [
+            "Failed"
+          ]
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "frequency": {
+              "default": 5,
+              "description": "How often the trigger should check for new scans in minutes",
+              "order": 1,
+              "title": "Frequency",
+              "type": "integer"
+            },
+            "most_recent_scan": {
+              "default": true,
+              "description": "Only process the most recent scan for a site since the last time the trigger was run",
+              "order": 3,
+              "title": "Most Recent Scan Only",
+              "type": "boolean"
+            },
+            "site_name_filter": {
+              "default": ".*",
+              "description": "Regular expression to match sites where new scans should be triggered",
+              "order": 2,
+              "title": "Site Name Filter",
+              "type": "string"
+            },
+            "status_filter": {
+              "default": "[\"Successful\"]",
+              "description": "List of scan statuses to match for trigger; options include: Aborted, Successful, Running, Stopped, Failed, Paused, Unknown",
+              "items": {
+                "type": "string"
+              },
+              "order": 4,
+              "title": "Status Filter",
+              "type": "array"
+            }
+          },
+          "required": [
+            "frequency",
+            "site_name_filter",
+            "most_recent_scan"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "definitions": {
+            "link": {
+              "properties": {
+                "href": {
+                  "description": "A hypertext reference, which is either a URI (see RFC 3986) or URI template (see RFC 6570)",
+                  "order": 1,
+                  "title": "URL",
+                  "type": "string"
+                },
+                "rel": {
+                  "description": "Link relation type following RFC 5988",
+                  "order": 2,
+                  "title": "Rel",
+                  "type": "string"
+                }
+              },
+              "title": "Link",
+              "type": "object"
+            },
+            "scan": {
+              "properties": {
+                "assets": {
+                  "description": "Count of assets identified during the scan",
+                  "order": 3,
+                  "title": "Assets",
+                  "type": "integer"
+                },
+                "duration": {
+                  "description": "Duration of the scan",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 11,
+                  "title": "Duration",
+                  "type": "string"
+                },
+                "endTime": {
+                  "description": "End time of the scan",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 14,
+                  "title": "End Time",
+                  "type": "string"
+                },
+                "engineId": {
+                  "description": "ID for the scan engine/scan engine pool used for the scan",
+                  "order": 8,
+                  "title": "Engine ID",
+                  "type": "integer"
+                },
+                "engineName": {
+                  "description": "Name of the scan engine/scan engine pool used for the scan",
+                  "order": 12,
+                  "title": "Engine Name",
+                  "type": "string"
+                },
+                "id": {
+                  "description": "ID of the scan",
+                  "order": 15,
+                  "title": "ID",
+                  "type": "integer"
+                },
+                "links": {
+                  "description": "List of hypermedia links to corresponding resources",
+                  "items": {
+                    "$ref": "#/definitions/link"
+                  },
+                  "order": 4,
+                  "title": "Links",
+                  "type": "array"
+                },
+                "message": {
+                  "description": "Scan status message",
+                  "order": 13,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "scanName": {
+                  "description": "Name of the scan",
+                  "order": 16,
+                  "title": "Scan Name",
+                  "type": "string"
+                },
+                "scanType": {
+                  "description": "Type of scan (automated, manual, scheduled)",
+                  "order": 2,
+                  "title": "Scan Type",
+                  "type": "string"
+                },
+                "siteId": {
+                  "description": "ID of the site scanned",
+                  "order": 9,
+                  "title": "Site ID",
+                  "type": "integer"
+                },
+                "siteName": {
+                  "description": "Name of the site scanned",
+                  "order": 5,
+                  "title": "Site Name",
+                  "type": "string"
+                },
+                "startTime": {
+                  "description": "Start time for the scan",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 10,
+                  "title": "Start Time",
+                  "type": "string"
+                },
+                "startedBy": {
+                  "description": "User that started the scan",
+                  "order": 7,
+                  "title": "Started By",
+                  "type": "string"
+                },
+                "status": {
+                  "description": "Scan status (aborted, unknown, running, finished, stopped, error, paused, dispatched, integrating)",
+                  "order": 1,
+                  "title": "Status",
+                  "type": "string"
+                },
+                "vulnerabilities": {
+                  "$ref": "#/definitions/vulnerabilities_count",
+                  "description": "Counts of vulnerabilities identified during the scan",
+                  "order": 6,
+                  "title": "Vulnerabilities"
+                }
+              },
+              "title": "Scan",
+              "type": "object"
+            },
+            "vulnerabilities_count": {
+              "properties": {
+                "critical": {
+                  "description": "Number of critical vulnerabilities",
+                  "order": 1,
+                  "title": "Critical",
+                  "type": "integer"
+                },
+                "moderate": {
+                  "description": "Number of moderate vulnerabilities",
+                  "order": 2,
+                  "title": "Moderate",
+                  "type": "integer"
+                },
+                "severe": {
+                  "description": "Number of severe vulnerabilities",
+                  "order": 3,
+                  "title": "Severe",
+                  "type": "integer"
+                },
+                "total": {
+                  "description": "Total",
+                  "order": 4,
+                  "title": "Total number of vulnerabilities",
+                  "type": "integer"
+                }
+              },
+              "title": "Vulnerabilities Count",
+              "type": "object"
+            }
+          },
+          "properties": {
+            "scan": {
+              "$ref": "#/definitions/scan",
+              "description": "InsightVM Scan",
+              "order": 1,
+              "title": "Scan"
+            }
+          },
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_plugin",
+        "plugin": {
+          "name": "Rapid7 InsightVM Console",
+          "slugVendor": "rapid7",
+          "slugName": "rapid7_insightvm",
+          "slugVersion": "6.1.0",
+          "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/rapid7_insightvm/6.1.0/icon.png"
+        }
+      }
+    ]
+  }
+}
