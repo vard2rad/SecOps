@@ -1,0 +1,2179 @@
+{
+  "kom": {
+    "komandVersion": "1.176.4-0-gb65a8",
+    "komFileVersion": "2.0.0",
+    "exportedAt": "2024-01-02T18:16:54.289344377Z",
+    "workflowVersions": [
+      {
+        "name": "RemoteIP Login Attempts",
+        "type": "runnable",
+        "version": "",
+        "description": "",
+        "graph": {
+          "edges": {
+            "01a6bfb0-0412-4512-8060-03373a32819b": {
+              "id": "01a6bfb0-0412-4512-8060-03373a32819b",
+              "name": "False",
+              "description": "IP address was not found. This is a sign this is a new indicator.",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "7af5099e-4c21-4da7-9e2f-415d6ced8139",
+              "toNodeId": "065ce3c2-9a3f-43a5-b6a9-4e5b8b751501"
+            },
+            "0cd7d52d-3c6f-4daf-b5cf-668aa879e37d": {
+              "id": "0cd7d52d-3c6f-4daf-b5cf-668aa879e37d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0",
+              "fromNodeId": "fd293814-a8e3-4907-96ff-fa045ef722c4",
+              "toNodeId": "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d"
+            },
+            "13bd5627-0bf6-4b28-9041-3be00799d504": {
+              "id": "13bd5627-0bf6-4b28-9041-3be00799d504",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "toNodeId": "6a098bf4-e5fb-4b93-810a-7b7a4ca920a9"
+            },
+            "21e1b57c-d558-400b-bf4f-e3fffbba5f55": {
+              "id": "21e1b57c-d558-400b-bf4f-e3fffbba5f55",
+              "name": "False",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "4c664ff1-99ec-47bb-a858-ab195866796f",
+              "toNodeId": "1eda1198-ea83-4420-93cb-0dbf6de10cae"
+            },
+            "22a82c07-448d-41c9-9624-fa90220ac0fc": {
+              "id": "22a82c07-448d-41c9-9624-fa90220ac0fc",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "26ef9167-e1b2-4d32-b3a3-a7a0f3eea524",
+              "toNodeId": "4c664ff1-99ec-47bb-a858-ab195866796f"
+            },
+            "2f9533bf-305f-4427-95d8-86042f502187": {
+              "id": "2f9533bf-305f-4427-95d8-86042f502187",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "29e2c949-6c24-4cc1-b6ae-c6fd6628cf4a",
+              "toNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "400804ea-6865-40a4-9bfc-b47766d2a2cb": {
+              "id": "400804ea-6865-40a4-9bfc-b47766d2a2cb",
+              "name": "Blacklist IP",
+              "description": "Allow InsightConnect to automatically add IP address as an indicator in Microsoft Defender.",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244",
+              "toNodeId": "3f48a1bc-3db2-4fe3-acca-22217d084733"
+            },
+            "54aa00e5-4001-423d-972c-8eb15812b0e2": {
+              "id": "54aa00e5-4001-423d-972c-8eb15812b0e2",
+              "name": "Take no action",
+              "description": "Take no remediation or defensive action on login attempt.",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244",
+              "toNodeId": ""
+            },
+            "586532ac-3532-4ed6-99ed-3a9730b5ed7b": {
+              "id": "586532ac-3532-4ed6-99ed-3a9730b5ed7b",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "842ed6a8-23b0-4b1d-8ba0-b7a01cf4bc56",
+              "toNodeId": "fd9bedf5-5ee7-48a5-936c-1a72a1c274b4"
+            },
+            "58e402f6-0e6f-47c3-aeba-4f6db27d109a": {
+              "id": "58e402f6-0e6f-47c3-aeba-4f6db27d109a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "35249fe6-43cb-49c5-baa8-35052a572ba5",
+              "toNodeId": "842ed6a8-23b0-4b1d-8ba0-b7a01cf4bc56"
+            },
+            "69a61bb4-82d4-4b85-bb40-e4b139971a16": {
+              "id": "69a61bb4-82d4-4b85-bb40-e4b139971a16",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "dcc7219b-0fbf-4943-8db5-c79b1fb40db7",
+              "toNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0"
+            },
+            "6df2f436-1357-4db6-a110-69149b546559": {
+              "id": "6df2f436-1357-4db6-a110-69149b546559",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "toNodeId": ""
+            },
+            "75f448f5-a5b9-4441-946e-dda7153ae128": {
+              "id": "75f448f5-a5b9-4441-946e-dda7153ae128",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "1eda1198-ea83-4420-93cb-0dbf6de10cae",
+              "toNodeId": "9a13bc8d-70bc-459c-a37b-caa0cf2d2deb"
+            },
+            "805c857a-0c43-44b4-a933-aabfee2e4f02": {
+              "id": "805c857a-0c43-44b4-a933-aabfee2e4f02",
+              "name": "True",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "4c664ff1-99ec-47bb-a858-ab195866796f",
+              "toNodeId": "1eda1198-ea83-4420-93cb-0dbf6de10cae"
+            },
+            "84e21e4e-20db-43ac-9df0-71b3bba3c5bf": {
+              "id": "84e21e4e-20db-43ac-9df0-71b3bba3c5bf",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "fd9bedf5-5ee7-48a5-936c-1a72a1c274b4",
+              "toNodeId": ""
+            },
+            "8738b119-9ea7-4596-9a9e-28b19a66e06f": {
+              "id": "8738b119-9ea7-4596-9a9e-28b19a66e06f",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "065ce3c2-9a3f-43a5-b6a9-4e5b8b751501",
+              "toNodeId": "35249fe6-43cb-49c5-baa8-35052a572ba5"
+            },
+            "892d757c-4587-456b-8626-babeeb0058a7": {
+              "id": "892d757c-4587-456b-8626-babeeb0058a7",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0",
+              "toNodeId": "f567c9db-0ce1-43dc-b6ee-04885557b78a"
+            },
+            "95fd667c-e987-40d9-b99e-280abdd1ea54": {
+              "id": "95fd667c-e987-40d9-b99e-280abdd1ea54",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "3f48a1bc-3db2-4fe3-acca-22217d084733",
+              "toNodeId": "537822a0-7446-4d1a-a545-f17f88429b0d"
+            },
+            "9bec3256-1afb-44ea-9c7d-c3e46228122c": {
+              "id": "9bec3256-1afb-44ea-9c7d-c3e46228122c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "537822a0-7446-4d1a-a545-f17f88429b0d",
+              "toNodeId": "7af5099e-4c21-4da7-9e2f-415d6ced8139"
+            },
+            "9fbddd05-3ba4-44aa-92dc-48bba0194d3d": {
+              "id": "9fbddd05-3ba4-44aa-92dc-48bba0194d3d",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "6a098bf4-e5fb-4b93-810a-7b7a4ca920a9",
+              "toNodeId": "26ef9167-e1b2-4d32-b3a3-a7a0f3eea524"
+            },
+            "b89955ec-74ea-44b6-9b0f-ac07d507ead2": {
+              "id": "b89955ec-74ea-44b6-9b0f-ac07d507ead2",
+              "name": "True",
+              "description": "IP address was found in the global artifact.",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "7af5099e-4c21-4da7-9e2f-415d6ced8139",
+              "toNodeId": "35249fe6-43cb-49c5-baa8-35052a572ba5"
+            },
+            "ba1e6d64-10d7-4b9b-a65d-4632870c354a": {
+              "id": "ba1e6d64-10d7-4b9b-a65d-4632870c354a",
+              "name": "",
+              "description": "",
+              "parentNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0",
+              "fromNodeId": "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d",
+              "toNodeId": ""
+            },
+            "c3c6dfa5-c023-4c4b-959d-0d920ef9c88c": {
+              "id": "c3c6dfa5-c023-4c4b-959d-0d920ef9c88c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "d354d61c-3a1e-4715-b412-a3c64a37d6f4",
+              "toNodeId": "dcc7219b-0fbf-4943-8db5-c79b1fb40db7"
+            },
+            "d7f1e482-e132-4986-a0ac-d7a2e95aad8c": {
+              "id": "d7f1e482-e132-4986-a0ac-d7a2e95aad8c",
+              "name": "",
+              "description": "",
+              "parentNodeId": "",
+              "fromNodeId": "f567c9db-0ce1-43dc-b6ee-04885557b78a",
+              "toNodeId": "29e2c949-6c24-4cc1-b6ae-c6fd6628cf4a"
+            },
+            "e765fae8-efe0-4a77-bb80-b49db442a036": {
+              "id": "e765fae8-efe0-4a77-bb80-b49db442a036",
+              "name": "Automated",
+              "description": "Threat thresholds met that allow automatic remediation to be taken.",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "26cc9590-4e92-415b-8203-0fa527afabfa",
+              "toNodeId": "3f48a1bc-3db2-4fe3-acca-22217d084733"
+            },
+            "ef4a2c65-0935-4cf1-ab9f-e71643c3f218": {
+              "id": "ef4a2c65-0935-4cf1-ab9f-e71643c3f218",
+              "name": "",
+              "description": "",
+              "parentNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0",
+              "fromNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0",
+              "toNodeId": "fd293814-a8e3-4907-96ff-fa045ef722c4"
+            },
+            "f4003b03-94d4-4f4a-af65-cbd2c36f065e": {
+              "id": "f4003b03-94d4-4f4a-af65-cbd2c36f065e",
+              "name": "",
+              "description": "",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "9a13bc8d-70bc-459c-a37b-caa0cf2d2deb",
+              "toNodeId": "26cc9590-4e92-415b-8203-0fa527afabfa"
+            },
+            "fbe26707-0119-4652-8b4f-c006eaf335dd": {
+              "id": "fbe26707-0119-4652-8b4f-c006eaf335dd",
+              "name": "Human",
+              "description": "Determination not effective, or threshold not high enough, to make an automated decision.",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "fromNodeId": "26cc9590-4e92-415b-8203-0fa527afabfa",
+              "toNodeId": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244"
+            }
+          },
+          "nodes": {
+            "065ce3c2-9a3f-43a5-b6a9-4e5b8b751501": {
+              "id": "065ce3c2-9a3f-43a5-b6a9-4e5b8b751501",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "1eda1198-ea83-4420-93cb-0dbf6de10cae": {
+              "id": "1eda1198-ea83-4420-93cb-0dbf6de10cae",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "26cc9590-4e92-415b-8203-0fa527afabfa": {
+              "id": "26cc9590-4e92-415b-8203-0fa527afabfa",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "26ef9167-e1b2-4d32-b3a3-a7a0f3eea524": {
+              "id": "26ef9167-e1b2-4d32-b3a3-a7a0f3eea524",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "29e2c949-6c24-4cc1-b6ae-c6fd6628cf4a": {
+              "id": "29e2c949-6c24-4cc1-b6ae-c6fd6628cf4a",
+              "parentNodeId": ""
+            },
+            "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d": {
+              "id": "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d",
+              "parentNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0"
+            },
+            "35249fe6-43cb-49c5-baa8-35052a572ba5": {
+              "id": "35249fe6-43cb-49c5-baa8-35052a572ba5",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "3f48a1bc-3db2-4fe3-acca-22217d084733": {
+              "id": "3f48a1bc-3db2-4fe3-acca-22217d084733",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "4c664ff1-99ec-47bb-a858-ab195866796f": {
+              "id": "4c664ff1-99ec-47bb-a858-ab195866796f",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "4ca06543-b8d9-4923-97f9-2463aaaafd4f": {
+              "id": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+              "parentNodeId": ""
+            },
+            "537822a0-7446-4d1a-a545-f17f88429b0d": {
+              "id": "537822a0-7446-4d1a-a545-f17f88429b0d",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "6a098bf4-e5fb-4b93-810a-7b7a4ca920a9": {
+              "id": "6a098bf4-e5fb-4b93-810a-7b7a4ca920a9",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "7af5099e-4c21-4da7-9e2f-415d6ced8139": {
+              "id": "7af5099e-4c21-4da7-9e2f-415d6ced8139",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "842ed6a8-23b0-4b1d-8ba0-b7a01cf4bc56": {
+              "id": "842ed6a8-23b0-4b1d-8ba0-b7a01cf4bc56",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "9a13bc8d-70bc-459c-a37b-caa0cf2d2deb": {
+              "id": "9a13bc8d-70bc-459c-a37b-caa0cf2d2deb",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "d354d61c-3a1e-4715-b412-a3c64a37d6f4": {
+              "id": "d354d61c-3a1e-4715-b412-a3c64a37d6f4",
+              "parentNodeId": ""
+            },
+            "dcc7219b-0fbf-4943-8db5-c79b1fb40db7": {
+              "id": "dcc7219b-0fbf-4943-8db5-c79b1fb40db7",
+              "parentNodeId": ""
+            },
+            "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0": {
+              "id": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0",
+              "parentNodeId": ""
+            },
+            "f567c9db-0ce1-43dc-b6ee-04885557b78a": {
+              "id": "f567c9db-0ce1-43dc-b6ee-04885557b78a",
+              "parentNodeId": ""
+            },
+            "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244": {
+              "id": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            },
+            "fd293814-a8e3-4907-96ff-fa045ef722c4": {
+              "id": "fd293814-a8e3-4907-96ff-fa045ef722c4",
+              "parentNodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0"
+            },
+            "fd9bedf5-5ee7-48a5-936c-1a72a1c274b4": {
+              "id": "fd9bedf5-5ee7-48a5-936c-1a72a1c274b4",
+              "parentNodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f"
+            }
+          }
+        },
+        "steps": {
+          "065ce3c2-9a3f-43a5-b6a9-4e5b8b751501": {
+            "nodeId": "065ce3c2-9a3f-43a5-b6a9-4e5b8b751501",
+            "name": "Add Global Artifact",
+            "type": "helpers",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "value": "{{[4ca06543-b8d9-4923-97f9-2463aaaafd4f].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/helper.svg",
+            "connectionType": "NONE",
+            "helperIdentifier": "append_global_artifacts",
+            "globalArtifact": {
+              "name": "Blocked IP Addresses",
+              "id": "a4cda292-1ce2-4e87-85aa-e427014f21be",
+              "schema": {
+                "definitions": {},
+                "properties": {
+                  "_ROOT_": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  }
+                },
+                "title": "Top Level Object",
+                "type": "object"
+              }
+            },
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "1eda1198-ea83-4420-93cb-0dbf6de10cae": {
+            "nodeId": "1eda1198-ea83-4420-93cb-0dbf6de10cae",
+            "name": "Brute Force Attempt - Join",
+            "type": "join",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "decisionEdgeIds": [
+                "21e1b57c-d558-400b-bf4f-e3fffbba5f55",
+                "805c857a-0c43-44b4-a933-aabfee2e4f02"
+              ],
+              "variableSets": [
+                {
+                  "arrayType": null,
+                  "inputBuilderSchemas": null,
+                  "name": "Brute Force Detected",
+                  "type": "boolean",
+                  "variables": {
+                    "21e1b57c-d558-400b-bf4f-e3fffbba5f55": false,
+                    "805c857a-0c43-44b4-a933-aabfee2e4f02": true
+                  }
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "Brute Force Detected": {
+                  "description": "Emitted variable \"Brute Force Detected\"",
+                  "order": 1,
+                  "title": "Brute Force Detected",
+                  "type": "boolean"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "properties": {
+                "Brute Force Detected": {
+                  "description": "Emitted variable \"Brute Force Detected\"",
+                  "order": 1,
+                  "title": "Brute Force Detected",
+                  "type": "boolean"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "26cc9590-4e92-415b-8203-0fa527afabfa": {
+            "nodeId": "26cc9590-4e92-415b-8203-0fa527afabfa",
+            "name": "Threshold Check",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "fbe26707-0119-4652-8b4f-c006eaf335dd",
+              "stepControlParams": [
+                {
+                  "edgeId": "e765fae8-efe0-4a77-bb80-b49db442a036",
+                  "expression": {
+                    "left": {
+                      "left": {
+                        "name": "6a098bf4-e5fb-4b93-810a-7b7a4ca920a9.abuseConfidenceScore",
+                        "type": "variable"
+                      },
+                      "op": ">=",
+                      "right": {
+                        "name": "$workflow.Abuse Confidence Threshold",
+                        "type": "variable"
+                      },
+                      "type": "binary"
+                    },
+                    "op": "OR",
+                    "right": {
+                      "left": {
+                        "name": "1eda1198-ea83-4420-93cb-0dbf6de10cae.Brute Force Detected",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": true
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[abuseConfidenceScore]}} >= {{[$workflow].[Abuse Confidence Threshold]}} || {{[1eda1198-ea83-4420-93cb-0dbf6de10cae].[Brute Force Detected]}} = true"
+                },
+                {
+                  "edgeId": "fbe26707-0119-4652-8b4f-c006eaf335dd",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "26ef9167-e1b2-4d32-b3a3-a7a0f3eea524": {
+            "nodeId": "26ef9167-e1b2-4d32-b3a3-a7a0f3eea524",
+            "name": "Count Login Attempts",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Defender Hunting",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_defender_hunting",
+              "slugVersion": "1.0.0",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_defender_hunting/1.0.0/icon.png"
+            },
+            "identifier": "advanced_hunting",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "query": "DeviceLogonEvents \n| where RemoteIPType == \"Public\" and RemoteIP == \"221.213.201.178\" and Timestamp > ago(1440m) \n| project DeviceName, RemoteIP, RemoteIPType, Timestamp"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "query": {
+                  "description": "Advanced Hunting query to run",
+                  "order": 1,
+                  "title": "Query",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "query"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "column": {
+                  "properties": {
+                    "name": {
+                      "description": "Column's name",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Column's data type",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Column",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "columns": {
+                  "description": "Schema containing response column's name and type",
+                  "items": {
+                    "$ref": "#/definitions/column"
+                  },
+                  "order": 1,
+                  "title": "Columns",
+                  "type": "array"
+                },
+                "rows": {
+                  "description": "Array of objects containing query response values with keys as specific column name",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 2,
+                  "title": "Rows",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "columns",
+                "rows"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "29e2c949-6c24-4cc1-b6ae-c6fd6628cf4a": {
+            "nodeId": "29e2c949-6c24-4cc1-b6ae-c6fd6628cf4a",
+            "name": "Dedup - IPs",
+            "type": "action",
+            "plugin": {
+              "name": "Uniq",
+              "slugVendor": "rapid7",
+              "slugName": "uniq",
+              "slugVersion": "1.0.2",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/uniq/1.0.2/icon.png"
+            },
+            "identifier": "uniq_string_array",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "data": "{{[dd6dda5e-75c5-4c7c-84ee-21da06ce93b0].[Extracted_IPs]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "data": {
+                  "description": "Array of strings",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Data",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "data"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "duplicate_count": {
+                  "description": "Count of duplicates removed",
+                  "order": 2,
+                  "title": "Duplicate count",
+                  "type": "integer"
+                },
+                "element_count": {
+                  "description": "Count of each element",
+                  "order": 3,
+                  "title": "Element count",
+                  "type": "object"
+                },
+                "result": {
+                  "description": "Result without duplicates",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Result",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d": {
+            "nodeId": "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d",
+            "name": "Convert to String - IP Array",
+            "type": "action",
+            "plugin": {
+              "name": "Type Converter",
+              "slugVendor": "rapid7",
+              "slugName": "type_converter",
+              "slugVersion": "1.8.2",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/type_converter/1.8.2/icon.png"
+            },
+            "identifier": "array_to_string",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "delimiter": "",
+                "input": "{{[fd293814-a8e3-4907-96ff-fa045ef722c4].[ip_addrs]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "delimiter": {
+                  "description": "Characters used to join an array to a string. Default is a space, if not provided by user",
+                  "order": 2,
+                  "title": "Delimiter",
+                  "type": "string"
+                },
+                "input": {
+                  "description": "Array to convert",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "Input",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "input"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "output": {
+                  "description": "Joined string",
+                  "order": 1,
+                  "title": "Output",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "output"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "35249fe6-43cb-49c5-baa8-35052a572ba5": {
+            "nodeId": "35249fe6-43cb-49c5-baa8-35052a572ba5",
+            "name": "Global Lookup Join",
+            "type": "join",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "decisionEdgeIds": [
+                "8738b119-9ea7-4596-9a9e-28b19a66e06f",
+                "b89955ec-74ea-44b6-9b0f-ac07d507ead2"
+              ],
+              "variableSets": []
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "properties": {},
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "3f48a1bc-3db2-4fe3-acca-22217d084733": {
+            "nodeId": "3f48a1bc-3db2-4fe3-acca-22217d084733",
+            "name": "Blacklist Path",
+            "type": "join",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "decisionEdgeIds": [
+                "e765fae8-efe0-4a77-bb80-b49db442a036",
+                "400804ea-6865-40a4-9bfc-b47766d2a2cb"
+              ],
+              "variableSets": [
+                {
+                  "arrayType": null,
+                  "inputBuilderSchemas": null,
+                  "name": "Decision Type",
+                  "type": "string",
+                  "variables": {
+                    "400804ea-6865-40a4-9bfc-b47766d2a2cb": "human decision",
+                    "e765fae8-efe0-4a77-bb80-b49db442a036": "automated decision"
+                  }
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "Decision Type": {
+                  "description": "Emitted variable \"Decision Type\"",
+                  "order": 1,
+                  "title": "Decision Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": {
+              "properties": {
+                "Decision Type": {
+                  "description": "Emitted variable \"Decision Type\"",
+                  "order": 1,
+                  "title": "Decision Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "4c664ff1-99ec-47bb-a858-ab195866796f": {
+            "nodeId": "4c664ff1-99ec-47bb-a858-ab195866796f",
+            "name": "Brute Force Attempt",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "21e1b57c-d558-400b-bf4f-e3fffbba5f55",
+              "stepControlParams": [
+                {
+                  "edgeId": "21e1b57c-d558-400b-bf4f-e3fffbba5f55",
+                  "expression": {},
+                  "expressionText": ""
+                },
+                {
+                  "edgeId": "805c857a-0c43-44b4-a933-aabfee2e4f02",
+                  "expression": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "26ef9167-e1b2-4d32-b3a3-a7a0f3eea524.rows",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "length",
+                      "type": "function"
+                    },
+                    "op": ">=",
+                    "right": {
+                      "name": "$workflow.Login Attempt Threshold",
+                      "type": "variable"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "length({{[26ef9167-e1b2-4d32-b3a3-a7a0f3eea524].[rows]}}) >= {{$workflow.[Login Attempt Threshold]}}"
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "4ca06543-b8d9-4923-97f9-2463aaaafd4f": {
+            "nodeId": "4ca06543-b8d9-4923-97f9-2463aaaafd4f",
+            "name": "Loop - IP Action",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "left": {
+                          "name": "26cc9590-4e92-415b-8203-0fa527afabfa.path",
+                          "type": "variable"
+                        },
+                        "op": "=",
+                        "right": {
+                          "type": "literal",
+                          "value": "Automated"
+                        },
+                        "type": "binary"
+                      },
+                      "op": "OR",
+                      "right": {
+                        "left": {
+                          "name": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244.path",
+                          "type": "variable"
+                        },
+                        "op": "=",
+                        "right": {
+                          "type": "literal",
+                          "value": "Blacklist IP"
+                        },
+                        "type": "binary"
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "{{[26cc9590-4e92-415b-8203-0fa527afabfa].[path]}} = \"Automated\" || {{[f7ed1d60-d8bf-413f-a984-f0f5a4f5f244].[path]}} = \"Blacklist IP\"",
+                    "value": "{{[4ca06543-b8d9-4923-97f9-2463aaaafd4f].[$item]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Actionable IPs",
+                  "outputType": "array"
+                }
+              ],
+              "innerEdgeId": "13bd5627-0bf6-4b28-9041-3be00799d504",
+              "nextEdgeId": "6df2f436-1357-4db6-a110-69149b546559",
+              "repeatVariable": "{{[29e2c949-6c24-4cc1-b6ae-c6fd6628cf4a].[result]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "Actionable IPs": {
+                  "description": "Custom output: \"Actionable IPs\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Actionable IPs",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "537822a0-7446-4d1a-a545-f17f88429b0d": {
+            "nodeId": "537822a0-7446-4d1a-a545-f17f88429b0d",
+            "name": "Lookup Global",
+            "type": "helpers",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "expression": {
+                "left": {
+                  "type": "literal",
+                  "value": "value"
+                },
+                "op": "=",
+                "right": {
+                  "name": "4ca06543-b8d9-4923-97f9-2463aaaafd4f.$item",
+                  "type": "variable"
+                },
+                "type": "binary"
+              },
+              "expressionText": "'value' = {{[4ca06543-b8d9-4923-97f9-2463aaaafd4f].[$item]}}",
+              "ignoreCase": false
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/helper.svg",
+            "connectionType": "NONE",
+            "helperIdentifier": "lookup_global_artifacts",
+            "globalArtifact": {
+              "name": "Blocked IP Addresses",
+              "id": "a4cda292-1ce2-4e87-85aa-e427014f21be",
+              "schema": {
+                "definitions": {},
+                "properties": {
+                  "_ROOT_": {
+                    "items": {
+                      "type": "string"
+                    },
+                    "type": "array"
+                  }
+                },
+                "title": "Top Level Object",
+                "type": "object"
+              }
+            },
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "6a098bf4-e5fb-4b93-810a-7b7a4ca920a9": {
+            "nodeId": "6a098bf4-e5fb-4b93-810a-7b7a4ca920a9",
+            "name": "AbuseIPDB IP_Lookup",
+            "type": "action",
+            "plugin": {
+              "name": "AbuseIPDB",
+              "slugVendor": "rapid7",
+              "slugName": "abuseipdb",
+              "slugVersion": "5.1.0",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/abuseipdb/5.1.0/icon.png"
+            },
+            "identifier": "check_ip",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "address": "{{[4ca06543-b8d9-4923-97f9-2463aaaafd4f].[$item]}}",
+                "days": "30",
+                "verbose": true
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "address": {
+                  "description": "IPv4 or IPv6 address e.g. 198.51.100.100, ::1, must be subscribed to accept bitmask wider than 255.255.255.0 (/24)",
+                  "order": 1,
+                  "title": "IP Address",
+                  "type": "string"
+                },
+                "days": {
+                  "default": "30",
+                  "description": "Check for IP reports in the last x days",
+                  "order": 2,
+                  "title": "Days",
+                  "type": "string"
+                },
+                "verbose": {
+                  "default": true,
+                  "description": "When set, reports will include the comment (if any) and the reporter's user ID number (0 if reported anonymously)",
+                  "order": 3,
+                  "title": "Verbose",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "address",
+                "days",
+                "verbose"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "report": {
+                  "properties": {
+                    "categories": {
+                      "description": "List of categories",
+                      "items": {
+                        "type": "integer"
+                      },
+                      "order": 3,
+                      "title": "Categories",
+                      "type": "array"
+                    },
+                    "comment": {
+                      "description": "Comment by reporter",
+                      "order": 2,
+                      "title": "Comment",
+                      "type": "string"
+                    },
+                    "reportedAt": {
+                      "description": "Date and time of report",
+                      "order": 1,
+                      "title": "Reported At",
+                      "type": "string"
+                    },
+                    "reporterCountryCode": {
+                      "description": "Country code of the reporter",
+                      "order": 5,
+                      "title": "Reporter Country Code",
+                      "type": "string"
+                    },
+                    "reporterCountryName": {
+                      "description": "Name of country reporter is from",
+                      "order": 6,
+                      "title": "Reporter Country Name",
+                      "type": "string"
+                    },
+                    "reporterId": {
+                      "description": "ID number of reporter",
+                      "order": 4,
+                      "title": "Reporter ID",
+                      "type": "integer"
+                    }
+                  },
+                  "title": "Report",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "abuseConfidenceScore": {
+                  "description": "Confidence of Abuse",
+                  "order": 5,
+                  "title": "Abuse Confidence Score",
+                  "type": "integer"
+                },
+                "countryCode": {
+                  "description": "Code of country IP is registered in",
+                  "order": 6,
+                  "title": "Country Code",
+                  "type": "string"
+                },
+                "countryName": {
+                  "description": "Name of Country IP is registered in",
+                  "order": 10,
+                  "title": "Country Name",
+                  "type": "string"
+                },
+                "domain": {
+                  "description": "Domain Name of IP",
+                  "order": 9,
+                  "title": "Domain",
+                  "type": "string"
+                },
+                "found": {
+                  "description": "Whether an IP address was found, indicating it may be malicious",
+                  "order": 15,
+                  "title": "Found",
+                  "type": "boolean"
+                },
+                "ipAddress": {
+                  "description": "Queried IP Address",
+                  "order": 1,
+                  "title": "IP Address",
+                  "type": "string"
+                },
+                "ipVersion": {
+                  "description": "Version of IP Address",
+                  "order": 3,
+                  "title": "IP Version",
+                  "type": "integer"
+                },
+                "isPublic": {
+                  "description": "Whether or not the IP Address is public",
+                  "order": 2,
+                  "title": "Is Public",
+                  "type": "boolean"
+                },
+                "isWhitelisted": {
+                  "description": "Whether or not IP Address is whitelisted",
+                  "order": 4,
+                  "title": "Is Whitelisted",
+                  "type": "boolean"
+                },
+                "isp": {
+                  "description": "Internet Service Provider for IP",
+                  "order": 8,
+                  "title": "ISP",
+                  "type": "string"
+                },
+                "lastReportedAt": {
+                  "description": "Date of last report",
+                  "order": 13,
+                  "title": "Last Reported At",
+                  "type": "string"
+                },
+                "numDistinctUsers": {
+                  "description": "Number of distinct users who reported IP",
+                  "order": 12,
+                  "title": "Number of Distinct Users",
+                  "type": "integer"
+                },
+                "reports": {
+                  "description": "List of reports",
+                  "items": {
+                    "$ref": "#/definitions/report"
+                  },
+                  "order": 14,
+                  "title": "Reports",
+                  "type": "array"
+                },
+                "totalReports": {
+                  "description": "Total number of reports of abuse",
+                  "order": 11,
+                  "title": "Total Reports",
+                  "type": "integer"
+                },
+                "usageType": {
+                  "description": "How IP is used",
+                  "order": 7,
+                  "title": "Usage Type",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "7af5099e-4c21-4da7-9e2f-415d6ced8139": {
+            "nodeId": "7af5099e-4c21-4da7-9e2f-415d6ced8139",
+            "name": "Lookup Success",
+            "type": "automated_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "01a6bfb0-0412-4512-8060-03373a32819b",
+              "stepControlParams": [
+                {
+                  "edgeId": "b89955ec-74ea-44b6-9b0f-ac07d507ead2",
+                  "expression": {
+                    "left": {
+                      "left": {
+                        "name": "537822a0-7446-4d1a-a545-f17f88429b0d.$success",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": true
+                      },
+                      "type": "binary"
+                    },
+                    "op": "AND",
+                    "right": {
+                      "left": {
+                        "name": "537822a0-7446-4d1a-a545-f17f88429b0d.found",
+                        "type": "variable"
+                      },
+                      "op": "=",
+                      "right": {
+                        "type": "literal",
+                        "value": true
+                      },
+                      "type": "binary"
+                    },
+                    "type": "binary"
+                  },
+                  "expressionText": "{{[537822a0-7446-4d1a-a545-f17f88429b0d].[$success]}} = true && {{[537822a0-7446-4d1a-a545-f17f88429b0d].[found]}} = true"
+                },
+                {
+                  "edgeId": "01a6bfb0-0412-4512-8060-03373a32819b",
+                  "expression": {},
+                  "expressionText": ""
+                }
+              ]
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/automated-decision.svg",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "842ed6a8-23b0-4b1d-8ba0-b7a01cf4bc56": {
+            "nodeId": "842ed6a8-23b0-4b1d-8ba0-b7a01cf4bc56",
+            "name": "Automated Blacklist IP",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Windows Defender ATP",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_atp",
+              "slugVersion": "5.0.0",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_atp/5.0.0/icon.png"
+            },
+            "identifier": "blacklist",
+            "continueOnFailure": true,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "action": "AlertAndBlock",
+                "application": "",
+                "description": "A public remote IP address that attempted to access an endpoint. Blacklisted by InsightConnect based on the response from a {{[3f48a1bc-3db2-4fe3-acca-22217d084733].[Decision Type]}}. Ref: {{[$job].[URL]}}",
+                "expiration_time": "",
+                "indicator": "{{[4ca06543-b8d9-4923-97f9-2463aaaafd4f].[$item]}}",
+                "indicator_state": true,
+                "rbac_group_names": [],
+                "recommended_actions": "Validate no successful attempts were made.",
+                "severity": "Low",
+                "title": "Public RemoteIP Login Attempt"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "action": {
+                  "default": "AlertAndBlock",
+                  "description": "The action that will be taken if the indicator will be discovered in the organization",
+                  "enum": [
+                    "Alert",
+                    "AlertAndBlock",
+                    "Allowed"
+                  ],
+                  "order": 2,
+                  "title": "Action",
+                  "type": "string"
+                },
+                "application": {
+                  "description": "The application associated with the indicator",
+                  "order": 3,
+                  "title": "Application",
+                  "type": "string"
+                },
+                "description": {
+                  "default": "Indicator Blacklisted from InsightConnect",
+                  "description": "Description of the indicator",
+                  "order": 5,
+                  "title": "Description",
+                  "type": "string"
+                },
+                "expiration_time": {
+                  "description": "The expiration time of the indicator, default value is one year from now",
+                  "order": 6,
+                  "title": "Expiration Time",
+                  "type": "string"
+                },
+                "indicator": {
+                  "description": "A supported indicator to blacklist or unblacklist. Supported indicators are IP addresses, URLs, domains, and SHA1 and SHA256 hashes",
+                  "order": 1,
+                  "title": "Indicator",
+                  "type": "string"
+                },
+                "indicator_state": {
+                  "default": false,
+                  "description": "True to add indicator, false to remove it from the list",
+                  "order": 10,
+                  "title": "Indicator State",
+                  "type": "boolean"
+                },
+                "rbac_group_names": {
+                  "description": "List of RBAC group names the indicator would be applied to",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 9,
+                  "title": "RBAC Group Names",
+                  "type": "array"
+                },
+                "recommended_actions": {
+                  "description": "TI indicator alert recommended actions",
+                  "order": 8,
+                  "title": "Recommended Actions",
+                  "type": "string"
+                },
+                "severity": {
+                  "default": "High",
+                  "description": "The severity of the indicator",
+                  "enum": [
+                    "Informational",
+                    "Low",
+                    "Medium",
+                    "High"
+                  ],
+                  "order": 7,
+                  "title": "Severity",
+                  "type": "string"
+                },
+                "title": {
+                  "description": "Indicator alert title",
+                  "order": 4,
+                  "title": "Title",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "indicator"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "indicator_action": {
+                  "properties": {
+                    "@odata.context": {
+                      "description": "@odata.context",
+                      "order": 1,
+                      "title": "@Odata.Context",
+                      "type": "string"
+                    },
+                    "action": {
+                      "description": "The action that will be taken if the indicator will be discovered in the organization",
+                      "order": 6,
+                      "title": "Action",
+                      "type": "string"
+                    },
+                    "application": {
+                      "description": "The application associated with the indicator",
+                      "order": 5,
+                      "title": "Application",
+                      "type": "string"
+                    },
+                    "createdBy": {
+                      "description": "Unique identity of the user/application that submitted the indicator",
+                      "order": 9,
+                      "title": "Created By",
+                      "type": "string"
+                    },
+                    "createdByDisplayName": {
+                      "description": "Created by display name",
+                      "order": 10,
+                      "title": "Created By Display Name",
+                      "type": "string"
+                    },
+                    "createdBySource": {
+                      "description": "Created by source",
+                      "order": 11,
+                      "title": "Created By Source",
+                      "type": "string"
+                    },
+                    "creationTimeDateTimeUtc": {
+                      "description": "The date and time when the indicator was created",
+                      "order": 16,
+                      "title": "Creation Time",
+                      "type": "string"
+                    },
+                    "description": {
+                      "description": "Description of the indicator",
+                      "order": 21,
+                      "title": "Description",
+                      "type": "string"
+                    },
+                    "expirationTime": {
+                      "description": "The expiration time of the indicator",
+                      "order": 17,
+                      "title": "Expiration Time",
+                      "type": "string"
+                    },
+                    "generateAlert": {
+                      "description": "Generate alert",
+                      "order": 12,
+                      "title": "Generate Alert",
+                      "type": "boolean"
+                    },
+                    "historicalDetection": {
+                      "description": "Historical detection",
+                      "order": 13,
+                      "title": "Historical Detection",
+                      "type": "boolean"
+                    },
+                    "id": {
+                      "description": "Identity of the indicator entity",
+                      "order": 2,
+                      "title": "Indicator ID",
+                      "type": "string"
+                    },
+                    "indicatorType": {
+                      "description": "Type of the indicator",
+                      "order": 4,
+                      "title": "Indicator Type",
+                      "type": "string"
+                    },
+                    "indicatorValue": {
+                      "description": "The potentially malicious indicator of one of the following types: IP addresses, URLs, domains, and SHA1 and SHA256 hashes",
+                      "order": 3,
+                      "title": "Indicator Value",
+                      "type": "string"
+                    },
+                    "lastUpdateTime": {
+                      "description": "The last time the indicator was updated",
+                      "order": 18,
+                      "title": "Last Update Time",
+                      "type": "string"
+                    },
+                    "lastUpdatedBy": {
+                      "description": "Identity of the user/application that last updated the indicator",
+                      "order": 14,
+                      "title": "Last Updated By",
+                      "type": "string"
+                    },
+                    "mitreTechniques": {
+                      "description": "MITRE techniques",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 15,
+                      "title": "MITRE Techniques",
+                      "type": "array"
+                    },
+                    "rbacGroupIds": {
+                      "description": "RBAC group IDs",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 23,
+                      "title": "RBAC Group IDs",
+                      "type": "array"
+                    },
+                    "rbacGroupNames": {
+                      "description": "RBAC device group names where the indicator is exposed and active. Empty list in case it exposed to all devices",
+                      "items": {
+                        "type": "string"
+                      },
+                      "order": 24,
+                      "title": "RBAC Group Names",
+                      "type": "array"
+                    },
+                    "recommendedActions": {
+                      "description": "Recommended actions for the indicator",
+                      "order": 22,
+                      "title": "Recommended Actions",
+                      "type": "string"
+                    },
+                    "severity": {
+                      "description": "The severity of the indicator",
+                      "order": 19,
+                      "title": "Severity",
+                      "type": "string"
+                    },
+                    "source": {
+                      "description": "The name of the user/application that submitted the indicator",
+                      "order": 8,
+                      "title": "Source",
+                      "type": "string"
+                    },
+                    "sourceType": {
+                      "description": "User in case the Indicator created by a user (e.g. from the portal), AadApp in case it submitted using automated application via the API.",
+                      "order": 7,
+                      "title": "Source Type",
+                      "type": "string"
+                    },
+                    "title": {
+                      "description": "Indicator alert title",
+                      "order": 20,
+                      "title": "Title",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Indicator Action",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "indicator_action_response": {
+                  "$ref": "#/definitions/indicator_action",
+                  "description": "A response that includes the result of the action, and supplemental information about the action taken",
+                  "order": 1,
+                  "title": "Indicator Action Response"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "9a13bc8d-70bc-459c-a37b-caa0cf2d2deb": {
+            "nodeId": "9a13bc8d-70bc-459c-a37b-caa0cf2d2deb",
+            "name": "RemoteIP Login Attempt",
+            "type": "artifact",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "content": "# {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[ipAddress]}}\n### abuseConfidenceScore: {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[abuseConfidenceScore]}}\n> **domain:** {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[domain]}}\n> **countryName:** {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[countryName]}}\n> **countryCode:** {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[countryCode]}}\n> **isp:** {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[isp]}}\n\n**Brute Force Attempt Detected:** {{[1eda1198-ea83-4420-93cb-0dbf6de10cae].[Brute Force Detected]}}\nTotal Reports: {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[totalReports]}}\n_Last Reported: {{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[lastReportedAt]}}_\n"
+              },
+              "type": "markdown"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/artifact.svg",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "d354d61c-3a1e-4715-b412-a3c64a37d6f4": {
+            "nodeId": "d354d61c-3a1e-4715-b412-a3c64a37d6f4",
+            "name": "Timer",
+            "type": "trigger",
+            "plugin": {
+              "name": "Timers",
+              "slugVendor": "rapid7",
+              "slugName": "timers",
+              "slugVersion": "3.0.1",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/timers/3.0.1/icon.png"
+            },
+            "identifier": "periodic",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "input": {
+                "message": "",
+                "period": "{{[$workflow].[Run Frequency]}}"
+              }
+            },
+            "triggerId": "390a5325-f502-48ca-944c-e6ec39a61e17",
+            "defaultInputJSONSchema": {
+              "properties": {
+                "message": {
+                  "description": "The message to send (optional)",
+                  "order": 2,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "period": {
+                  "default": 60,
+                  "description": "Minutes between events",
+                  "order": 1,
+                  "title": "Period",
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "period"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "message": {
+                  "description": "The message sent",
+                  "order": 1,
+                  "title": "Message",
+                  "type": "string"
+                },
+                "time": {
+                  "description": "The UTC time of event returned in ISO format",
+                  "displayType": "date",
+                  "format": "date-time",
+                  "order": 2,
+                  "title": "Time",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "message",
+                "time"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/default.svg",
+            "connectionType": "ORCHESTRATOR",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "dcc7219b-0fbf-4943-8db5-c79b1fb40db7": {
+            "nodeId": "dcc7219b-0fbf-4943-8db5-c79b1fb40db7",
+            "name": "Query",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Defender Hunting",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_defender_hunting",
+              "slugVersion": "1.0.0",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_defender_hunting/1.0.0/icon.png"
+            },
+            "identifier": "advanced_hunting",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "query": "DeviceLogonEvents \n| where RemoteIPType == \"Public\" and Timestamp > ago({{$workflow.[Run Frequency]}}m)\n| project DeviceName, RemoteIP, RemoteIPType, Timestamp"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "query": {
+                  "description": "Advanced Hunting query to run",
+                  "order": 1,
+                  "title": "Query",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "query"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "definitions": {
+                "column": {
+                  "properties": {
+                    "name": {
+                      "description": "Column's name",
+                      "order": 1,
+                      "title": "Name",
+                      "type": "string"
+                    },
+                    "type": {
+                      "description": "Column's data type",
+                      "order": 2,
+                      "title": "Type",
+                      "type": "string"
+                    }
+                  },
+                  "title": "Column",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "columns": {
+                  "description": "Schema containing response column's name and type",
+                  "items": {
+                    "$ref": "#/definitions/column"
+                  },
+                  "order": 1,
+                  "title": "Columns",
+                  "type": "array"
+                },
+                "rows": {
+                  "description": "Array of objects containing query response values with keys as specific column name",
+                  "items": {
+                    "type": "object"
+                  },
+                  "order": 2,
+                  "title": "Rows",
+                  "type": "array"
+                }
+              },
+              "required": [
+                "columns",
+                "rows"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0": {
+            "nodeId": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0",
+            "name": "Loop - Hunt Results",
+            "type": "loop",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "customOutput": [
+                {
+                  "input": {
+                    "expression": {
+                      "left": {
+                        "left": {
+                          "args": [
+                            {
+                              "name": "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d.$success",
+                              "type": "variable"
+                            }
+                          ],
+                          "name": "is_defined",
+                          "type": "function"
+                        },
+                        "op": "=",
+                        "right": {
+                          "type": "literal",
+                          "value": true
+                        },
+                        "type": "binary"
+                      },
+                      "op": "AND",
+                      "right": {
+                        "left": {
+                          "name": "2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d.$success",
+                          "type": "variable"
+                        },
+                        "op": "=",
+                        "right": {
+                          "type": "literal",
+                          "value": true
+                        },
+                        "type": "binary"
+                      },
+                      "type": "binary"
+                    },
+                    "expressionText": "is_defined({{[2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d].[$success]}}) = true && {{[2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d].[$success]}} = true",
+                    "value": "{{[2d2d334a-7cae-4a7d-bd69-6b0f4e9c008d].[output]}}",
+                    "valueType": "string"
+                  },
+                  "name": "Extracted_IPs",
+                  "outputType": "array"
+                }
+              ],
+              "innerEdgeId": "ef4a2c65-0935-4cf1-ab9f-e71643c3f218",
+              "nextEdgeId": "892d757c-4587-456b-8626-babeeb0058a7",
+              "repeatVariable": "{{[dcc7219b-0fbf-4943-8db5-c79b1fb40db7].[rows]}}"
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": {
+              "properties": {
+                "Extracted_IPs": {
+                  "description": "Custom output: \"Extracted_IPs\"",
+                  "items": {
+                    "type": "string"
+                  },
+                  "title": "Extracted_IPs",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultImageData": "",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "f567c9db-0ce1-43dc-b6ee-04885557b78a": {
+            "nodeId": "f567c9db-0ce1-43dc-b6ee-04885557b78a",
+            "name": "Check - Array Exists",
+            "type": "filter",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "stepControlParam": {
+                "edgeId": "d7f1e482-e132-4986-a0ac-d7a2e95aad8c",
+                "expression": {
+                  "left": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0.Extracted_IPs",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "is_defined",
+                      "type": "function"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": false
+                    },
+                    "type": "binary"
+                  },
+                  "op": "OR",
+                  "right": {
+                    "left": {
+                      "args": [
+                        {
+                          "name": "dd6dda5e-75c5-4c7c-84ee-21da06ce93b0.Extracted_IPs",
+                          "type": "variable"
+                        }
+                      ],
+                      "name": "length",
+                      "type": "function"
+                    },
+                    "op": "=",
+                    "right": {
+                      "type": "literal",
+                      "value": 0
+                    },
+                    "type": "binary"
+                  },
+                  "type": "binary"
+                },
+                "expressionText": "is_defined({{[dd6dda5e-75c5-4c7c-84ee-21da06ce93b0].[Extracted_IPs]}}) = false || length({{[dd6dda5e-75c5-4c7c-84ee-21da06ce93b0].[Extracted_IPs]}}) = 0"
+              },
+              "stopOnMatch": true
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/filter.svg",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244": {
+            "nodeId": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244",
+            "name": "Human - Blacklist IP",
+            "type": "human_decision",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "parameters": {
+              "defaultEdgeId": "",
+              "notifications": {
+                "artifactIds": [
+                  "9a13bc8d-70bc-459c-a37b-caa0cf2d2deb"
+                ],
+                "userIdsForEmail": []
+              },
+              "stepControlParams": [
+                {
+                  "edgeId": "400804ea-6865-40a4-9bfc-b47766d2a2cb",
+                  "expression": {},
+                  "expressionText": "",
+                  "isTimeoutOnly": false,
+                  "nodeId": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244"
+                },
+                {
+                  "edgeId": "54aa00e5-4001-423d-972c-8eb15812b0e2",
+                  "expression": {},
+                  "expressionText": "",
+                  "isTimeoutOnly": false,
+                  "nodeId": "f7ed1d60-d8bf-413f-a984-f0f5a4f5f244"
+                }
+              ],
+              "timeout": null,
+              "timeoutDisplayUnit": null,
+              "timeoutEdgeId": null
+            },
+            "defaultInputJSONSchema": null,
+            "defaultOutputJSONSchema": null,
+            "outputJSONSchema": null,
+            "defaultImageData": "https://us2.cdn-assets.connect.insight.rapid7.com/step-type-icons/human-decision.svg",
+            "connectionType": "NONE",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "fd293814-a8e3-4907-96ff-fa045ef722c4": {
+            "nodeId": "fd293814-a8e3-4907-96ff-fa045ef722c4",
+            "name": "ExtractIP",
+            "type": "action",
+            "plugin": {
+              "name": "ExtractIt",
+              "slugVendor": "rapid7",
+              "slugName": "extractit",
+              "slugVersion": "3.0.8",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/extractit/3.0.8/icon.png"
+            },
+            "identifier": "ip_extractor",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "file": "",
+                "str": "{{[dd6dda5e-75c5-4c7c-84ee-21da06ce93b0].[$item]}}"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "properties": {
+                "file": {
+                  "description": "Input file as bytes, supports text and binary file types such as PDF, DOCX, XLSX, PPTX, ODT, ODP, ODS",
+                  "displayType": "bytes",
+                  "format": "bytes",
+                  "order": 2,
+                  "title": "File",
+                  "type": "string"
+                },
+                "str": {
+                  "description": "Input string",
+                  "order": 1,
+                  "title": "String",
+                  "type": "string"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "ip_addrs": {
+                  "description": "List of extracted IP Addresses",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 1,
+                  "title": "IP Addresses",
+                  "type": "array"
+                }
+              },
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "ORCHESTRATOR",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          },
+          "fd9bedf5-5ee7-48a5-936c-1a72a1c274b4": {
+            "nodeId": "fd9bedf5-5ee7-48a5-936c-1a72a1c274b4",
+            "name": "Send Email",
+            "type": "action",
+            "plugin": {
+              "name": "Microsoft Office 365 Email",
+              "slugVendor": "rapid7",
+              "slugName": "microsoft_office365_email",
+              "slugVersion": "6.0.4",
+              "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/microsoft_office365_email/6.0.4/icon.png"
+            },
+            "identifier": "send_email",
+            "continueOnFailure": false,
+            "isDisabled": false,
+            "isCloud": false,
+            "parameters": {
+              "input": {
+                "attachment": [],
+                "bcc": [],
+                "body": "<h2>Indicator Added to Microsoft Defender</h2>\n<h5>A new indicator was added to Microsoft Defender for Endpoints based on findings in InsightConnect. Details of the finding are listed below.</h4><br>\n<h4>{{[4ca06543-b8d9-4923-97f9-2463aaaafd4f].[$item]}}</h5><br>\n<b>Indicator Type:</b> IP Address<br>\n<b>domain: </b>{{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[domain]}}<br>\n<b>countryName: </b>{{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[countryName]}}<br>\n<b>isp: </b>{{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[isp]}}<br>\n<br>\n<h4>AbuseIPDB Score</h4>\n<b>AbuseConfidenceScore: </b>{{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[abuseConfidenceScore]}}<br>\n<b>lastreportedAt: </b>{{[6a098bf4-e5fb-4b93-810a-7b7a4ca920a9].[lastReportedAt]}}<br>\n<br>\nRefer to <a href=\"{{[$job].[URL]}}\">InsightConnect Job</a>\nfor additional details.",
+                "cc": [],
+                "email_from": "{{[$workflow].[Email Sender]}}",
+                "email_to": [
+                  "{{[$workflow].[Email Recipient]}}"
+                ],
+                "is_html": true,
+                "subject": "New Indicator Added to Defender"
+              }
+            },
+            "defaultInputJSONSchema": {
+              "definitions": {
+                "file": {
+                  "description": "File Object",
+                  "properties": {
+                    "content": {
+                      "description": "File contents",
+                      "format": "bytes",
+                      "title": "Content",
+                      "type": "string"
+                    },
+                    "filename": {
+                      "description": "Name of file",
+                      "title": "Filename",
+                      "type": "string"
+                    }
+                  },
+                  "title": "File",
+                  "type": "object"
+                }
+              },
+              "properties": {
+                "attachment": {
+                  "description": "Accepts one or more attachment represented as a file type which contains the filename and the file content encoded with base64",
+                  "items": {
+                    "$ref": "#/definitions/file"
+                  },
+                  "order": 8,
+                  "title": "Attachment",
+                  "type": "array"
+                },
+                "bcc": {
+                  "description": "Blind carbon copy recipients",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 6,
+                  "title": "BCC",
+                  "type": "array"
+                },
+                "body": {
+                  "description": "Body of the email",
+                  "order": 4,
+                  "title": "Body",
+                  "type": "string"
+                },
+                "cc": {
+                  "description": "Carbon copy recipients",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 7,
+                  "title": "CC",
+                  "type": "array"
+                },
+                "email_from": {
+                  "description": "Email address this email will be sent from",
+                  "order": 1,
+                  "title": "Email Sender",
+                  "type": "string"
+                },
+                "email_to": {
+                  "description": "One or more email addresses of recipients",
+                  "items": {
+                    "type": "string"
+                  },
+                  "order": 2,
+                  "title": "Email To",
+                  "type": "array"
+                },
+                "is_html": {
+                  "description": "Is the body of this email HTML",
+                  "order": 5,
+                  "title": "Is HTML",
+                  "type": "boolean"
+                },
+                "subject": {
+                  "description": "Subject of the email",
+                  "order": 3,
+                  "title": "Subject",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "email_from",
+                "email_to",
+                "subject",
+                "body",
+                "is_html"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "defaultOutputJSONSchema": {
+              "properties": {
+                "success": {
+                  "description": "Success",
+                  "order": 1,
+                  "title": "Success",
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "success"
+              ],
+              "title": "Variables",
+              "type": "object"
+            },
+            "outputJSONSchema": null,
+            "defaultImageData": "",
+            "connectionType": "CONNECTION",
+            "caseManagementInputJsonSchema": null,
+            "caseManagementOutputJsonSchema": null
+          }
+        },
+        "tags": [],
+        "humanCostSeconds": 0,
+        "humanCostDisplayUnit": "minutes",
+        "parameters": {
+          "definitionSchema": {
+            "type": "object",
+            "required": [],
+            "properties": {
+              "Email Sender": {
+                "type": "string",
+                "description": "Email address that notification(s) should come from."
+              },
+              "Run Frequency": {
+                "type": "integer",
+                "description": "Number of minutes between each query."
+              },
+              "Email Recipient": {
+                "type": "string",
+                "description": "This is the email address that will receive notifications when a new indicator was added."
+              },
+              "Login Attempt Threshold": {
+                "type": "integer",
+                "description": "If login attempts in the last hour are greater than or equal to this integer then the IP address will be automatically blocked."
+              },
+              "Abuse Confidence Threshold": {
+                "type": "integer",
+                "description": "Minimum AbuseIPDB threshold required to automate remediation action."
+              }
+            },
+            "definitions": {}
+          }
+        },
+        "summary": ""
+      }
+    ],
+    "triggers": [
+      {
+        "id": "390a5325-f502-48ca-944c-e6ec39a61e17",
+        "identifier": "periodic",
+        "name": "Timer",
+        "description": "",
+        "input": {
+          "message": "",
+          "period": "{{[$workflow].[Run Frequency]}}"
+        },
+        "inputJsonSchema": {
+          "properties": {
+            "message": {
+              "description": "The message to send (optional)",
+              "order": 2,
+              "title": "Message",
+              "type": "string"
+            },
+            "period": {
+              "default": 60,
+              "description": "Minutes between events",
+              "order": 1,
+              "title": "Period",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "period"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "outputJsonSchema": {
+          "properties": {
+            "message": {
+              "description": "The message sent",
+              "order": 1,
+              "title": "Message",
+              "type": "string"
+            },
+            "time": {
+              "description": "The UTC time of event returned in ISO format",
+              "displayType": "date",
+              "format": "date-time",
+              "order": 2,
+              "title": "Time",
+              "type": "string"
+            }
+          },
+          "required": [
+            "message",
+            "time"
+          ],
+          "title": "Variables",
+          "type": "object"
+        },
+        "tags": [],
+        "type": "trigger_plugin",
+        "plugin": {
+          "name": "Timers",
+          "slugVendor": "rapid7",
+          "slugName": "timers",
+          "slugVersion": "3.0.1",
+          "imageData": "https://us2.cdn-assets.connect.insight.rapid7.com/icons/rapid7/timers/3.0.1/icon.png"
+        }
+      }
+    ]
+  }
+}
