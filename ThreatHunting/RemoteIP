@@ -1,2 +1,3 @@
 DeviceLogonEvents 
 | where RemoteIPType == "Public" and Timestamp > ago({{$workflow.[Run Frequency]}}m)
+| project DeviceName, RemoteIP, RemoteIPType
