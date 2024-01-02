@@ -30,6 +30,6 @@ This workflow runs a query that pulls remote public IP addresses and checks them
 # Version History
 
 # Links
-[GitHub InsightConnect/RemoteIP Login Attempts](https://github.com/vard2rad/SecOps/tree/main/InsightConnect/RemoteIP%20Login%20Attempts)
+[GitHub InsightConnect/RemoteIPLoginAttempts](https://github.com/vard2rad/SecOps/tree/main/InsightConnect/RemoteIPLoginAttempts)
 
 ## References
