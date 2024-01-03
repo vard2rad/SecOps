@@ -19,7 +19,7 @@ This workflow runs a query that pulls remote public IP addresses and checks them
 
 ## Setup
 
-#### Instructions setting up Github Bearer Token
+### Parameter Details
 
 ## Usage
 

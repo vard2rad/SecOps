@@ -1,0 +1,9 @@
+##No Risk
+Default.
+
+##Low Risk
+({{["WHOIS Reputation Output"].[WHOIS Reputation]}} = "Invalid" || {{["WHOIS Reputation Output"].[WHOIS Reputation]}} = "Low risk") 
+&& ({{["VirusTotal Domain Scaler Output"].[VirusTotal Domain Repuation]}} = "Low risk" || {{["VirusTotal Domain Scaler Output"].[VirusTotal Domain Repuation]}} = "No risk")
+
+##High Risk
+{{["WHOIS Reputation Output"].[WHOIS Reputation]}} = "High Risk" || {{["VirusTotal Domain Scaler Output"].[VirusTotal Domain Repuation]}} = "High risk"

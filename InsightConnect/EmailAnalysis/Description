@@ -1,0 +1,36 @@
+# Description
+
+# Key Features
+* 
+* 
+* 
+
+# Requirements
+* Microsoft Office 365 Email
+* VirusTotal
+* WHOIS
+* Cisco ThreatGrid
+
+# Documentation
+
+## Setup
+
+## Parameter Descriptions
+**VirusTotal Domain Threshold:** This threshold governs the risk measurement of VirusTotal reputations. This number NEEDS to be negative. If the reputation is lower than this, the domain is found to be malicious. If the reputation is higher, then the domain will be low risk (or harmless if it is greater than 0). Example is below.
+> Let R = VirusTotal Reputation
+> Let P = Parameter
+> > If R > 0, domain has no risk
+> > If 0 > R > P, domain is low risk
+> > If 0 > P > R, domain is high risk
+
+## Usage
+
+## Technical Details
+
+## Troubleshooting
+
+# Version History
+
+# Links
+
+## References
