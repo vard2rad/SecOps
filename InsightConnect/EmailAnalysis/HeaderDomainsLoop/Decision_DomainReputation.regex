@@ -1,0 +1,6 @@
+## Invalid
+{{["Lookup Header Domain"].[found]}} = false && {{["WHOIS Domain Validation Join"].[WHOIS Domain Valid]}} = false && {{["VirusTotal Domain Validation Join"].[VirusTotal Domain Valid]}} = false
+## Harmless
+Default path: No expression needed
+## Malicious
+{{["Lookup Header Domain"].[found]}} = false && {{["WHOIS Domain Validation Join"].[Domain Age]}} < 30 || {{["VirusTotal Domain Report"].[report].[reputation]}} < {{$workflow.[VirusTotal Domain Reputation Threshold]}}

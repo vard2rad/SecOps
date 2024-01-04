@@ -1,0 +1,6 @@
+## Invalid Domains
+{{["Domain Reputation Decision"].[path]}} = "Invalid"
+## Harmless Domains
+{{["Domain Reputation Decision"].[path]}} = "Harmless"
+## Malicious Domains
+{{["Domain Reputation Decision"].[path]}} = "Malicious"
