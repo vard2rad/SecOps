@@ -7,3 +7,6 @@ Default.
 
 ##High Risk
 {{["WHOIS Reputation Output"].[WHOIS Reputation]}} = "High Risk" || {{["VirusTotal Domain Scaler Output"].[VirusTotal Domain Repuation]}} = "High risk"
+
+##Invalid
+({{["WHOIS Reputation Output"].[WHOIS Reputation]}} = "Invalid" || is_defined({{["WHOIS Reputation Output"].[WHOIS Reputation]}}) = false) && (is_defined({{["VirusTotal Domain Scaler Output"].[VirusTotal Domain Repuation]}}) = false || {{["VirusTotal Domain Lookup"].[$success]}} = false)

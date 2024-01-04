@@ -9,14 +9,18 @@
 * Microsoft Office 365 Email
 * VirusTotal
 * WHOIS
+* AbuseIPDB
 * Cisco ThreatGrid
+* Global Artifacts
+  * Allowed Domains
+  * Allowed URLs
 
 # Documentation
 
 ## Setup
 
-## Parameter Descriptions
-**VirusTotal Domain Threshold:** This threshold governs the risk measurement of VirusTotal reputations. This number NEEDS to be negative. If the reputation is lower than this, the domain is found to be malicious. If the reputation is higher, then the domain will be low risk (or harmless if it is greater than 0). Example is below.
+## Parameter Definitions
+**VirusTotal Domain Threshold:** This threshold governs the risk measurement of VirusTotal reputations. This number NEEDS to be negative, since malicious reputations are indicated with a value less than 0. If the reputation is lower than this parameter, the domain is found to be malicious. If the reputation is higher, then the domain will be low risk (or harmless if it is greater than 0). Example is below.
 > Let R = VirusTotal Reputation
 > Let P = Parameter
 > > If R > 0, domain has no risk
@@ -25,7 +29,9 @@
 
 ## Usage
 
-## Technical Details
+## Process Details
+### Header Domains
+1. Headers are checked against the Allowed Domains
 
 ## Troubleshooting
 
