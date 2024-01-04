@@ -1,5 +1,5 @@
 ## Invalid
-{{["Lookup Header Domain"].[found]}} = false && {{["WHOIS Domain Validation Join"].[WHOIS Domain Valid]}} = false && {{["VirusTotal Domain Validation Join"].[VirusTotal Domain Valid]}} = false
+{{["HDL-Artifact-Lookup"].[found]}} = false && ({{["HDL-Join-WHOIS_Validation"].[WHOIS Domain Valid]}} = false && {{["HDL-Join-VirusTotal_Validation"].[VirusTotal Domain Valid]}} = false)
 ## Harmless
 Default path: No expression needed
 ## Malicious

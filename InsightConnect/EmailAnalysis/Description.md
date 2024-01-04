@@ -20,12 +20,13 @@
 ## Setup
 
 ## Parameter Definitions
-**VirusTotal Domain Threshold:** This threshold governs the risk measurement of VirusTotal reputations. This number NEEDS to be negative, since malicious reputations are indicated with a value less than 0. If the reputation is lower than this parameter, the domain is found to be malicious. If the reputation is higher, then the domain will be low risk (or harmless if it is greater than 0). Example is below.
-> Let R = VirusTotal Reputation
-> Let P = Parameter
-> > If R > 0, domain has no risk
-> > If 0 > R > P, domain is low risk
-> > If 0 > P > R, domain is high risk
+### VirusTotal Domain Threshold 
+This threshold governs the risk measurement of VirusTotal reputations. This number NEEDS to be negative, since malicious reputations are indicated with a value less than 0. If the reputation is lower than this parameter, the domain is found to be malicious. If the reputation is higher, then the domain will be low risk (or harmless if it is greater than 0). Example is below.
+> Let R = VirusTotal Reputation, P = Parameter \
+> If R > 0, domain is harmless; if 0 > P > R, domain is malicious
+
+### VirusTotal URL Threshold
+This threshold will mark the minimum amount of malicious votes required on the API call in order to flag a URL as malicious.
 
 ## Usage
 

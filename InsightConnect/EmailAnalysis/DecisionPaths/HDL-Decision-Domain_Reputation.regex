@@ -1,0 +1,4 @@
+## Malicious
+{{["HDL-Artifact-Lookup"].[found]}} = false && {{["HDL-Join-WHOIS_Validation"].[Domain_Age]}} < 30 || {{["HDL-VirusTotal-Report"].[report].[reputation]}} < {{$workflow.[VirusTotal Domain Reputation Threshold]}}
+## Invalid
+{{["HDL-Artifact-Lookup"].[found]}} = false && ({{["HDL-Join-WHOIS_Validation"].[WHOIS-Domain_Valid]}} = false && {{["HDL-Join-VirusTotal_Validation"].[VirusTotal-Domain_Valid]}} = false)

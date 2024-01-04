@@ -2,13 +2,13 @@
   "kom": {
     "komandVersion": "1.176.4-0-gb65a8",
     "komFileVersion": "2.0.0",
-    "exportedAt": "2024-01-02T18:16:54.289344377Z",
+    "exportedAt": "2024-01-04T21:03:57.240077371Z",
     "workflowVersions": [
       {
         "name": "RemoteIP Login Attempts",
         "type": "runnable",
         "version": "",
-        "description": "",
+        "description": "# Description\nThis workflow runs a query that pulls remote public IP addresses and checks them against AbuseIPDB and the total number of login attempts. Based on these results, the workflow then automatically adds the IP address as an indicator in Microsoft Defender for Endpoint.\n\n# Key Features\n* Runs automatically to scan for new login attempts based on frequency set\n* Uses workflow parameters to establish a threshold for automatically adding IPs found as an indicator\n* If the above parameters aren't met, then the workflow will trigger a Human decision allowing user(s) to manually initiate the indicator addition\n\n# Requirements\n* Microsoft Office 365 Email\n* Microsoft Windows Defender ATP\n* AbuseIPDB API\n* Global Artifact (\"Blocked IP Addresses\")\n* Microsoft Defender Hunting\n\n# Documentation\n\n## Setup\n\n#### Instructions setting up Github Bearer Token\n\n## Usage\n\n## Technical Details\n\n## Troubleshooting\n\n# Version History\n\n# Links\n\n## References",
         "graph": {
           "edges": {
             "01a6bfb0-0412-4512-8060-03373a32819b": {
@@ -2073,8 +2073,12 @@
             "caseManagementOutputJsonSchema": null
           }
         },
-        "tags": [],
-        "humanCostSeconds": 0,
+        "tags": [
+          "Endpoint Detection & Response",
+          "Network & Firewall",
+          "Threat Intelligence"
+        ],
+        "humanCostSeconds": 1800,
         "humanCostDisplayUnit": "minutes",
         "parameters": {
           "definitionSchema": {
@@ -2105,7 +2109,7 @@
             "definitions": {}
           }
         },
-        "summary": ""
+        "summary": "This workflow runs a query that pulls remote public IP addresses and checks them against AbuseIPDB and the total number of login attempts. Based on these results, the workflow then automatically adds the IP address as an indicator in Microsoft Defender for Endpoint."
       }
     ],
     "triggers": [

@@ -1,0 +1,6 @@
+## Invalid Domains
+{{["HDL-Decision-Domain_Reputation"].[path]}} = "Invalid"
+## Harmless Domains
+{{["HDL-Decision-Domain_Reputation"].[path]}} = "Harmless"
+## Malicious Domains
+{{["HDL-Decision-Domain_Reputation"].[path]}} = "Malicious"

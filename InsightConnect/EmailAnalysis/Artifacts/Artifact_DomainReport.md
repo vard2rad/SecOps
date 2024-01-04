@@ -3,6 +3,7 @@
 **Domain Age:** {{["WHOIS Domain Validation Join"].[Domain Age (String)]}} \
 
 ### VirusTotal
+**Reputation:** {{["VirusTotal Domain Report"].[report].[reputation]}}
 > **Community Results**
 >> Harmless Votes: {{["VirusTotal Domain Report"].[report].[total_votes].[harmless]}}
 >> Malicious Votes: {{["VirusTotal Domain Report"].[report].[total_votes].[malicious]}}
