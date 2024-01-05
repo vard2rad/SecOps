@@ -1,0 +1,1 @@
+{{["IPA-join-abuseipdb_theshold_met"].[AbuseIPDB Threshold Met]}} = true || {{["IPA-join-brute_force"].[Brute Force Detected]}} = true || {{["IPA-join-ip_address_exists"].[Indicator Already Exists]}} = true

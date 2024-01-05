@@ -1,0 +1,14 @@
+<h2>Indicator Added to Microsoft Defender</h2>
+A new indicator was added to Microsoft Defender for Endpoints based on findings in InsightConnect. Details of the finding are listed below.
+<h4>{{["loop-indicator_response"].[$item]}}</h4>
+<b>Indicator Type:</b> ipaddress<br>
+<b>domain: </b>{{["IR-abuseipdb-ip_lookup"].[domain]}}<br>
+<b>countryName: </b>{{["IR-abuseipdb-ip_lookup"].[countryName]}}<br>
+<b>isp: </b>{{["IR-abuseipdb-ip_lookup"].[isp]}}
+<br>
+<h4>AbuseIPDB Score</h4>
+<b>AbuseConfidenceScore: </b>{{["IR-abuseipdb-ip_lookup"].[abuseConfidenceScore]}}<br>
+<b>lastreportedAt: </b>{{["IR-abuseipdb-ip_lookup"].[lastReportedAt]}}<br>
+<br>
+Refer to <a href="{{[$job].[URL]}}">InsightConnect Job</a>
+for additional details.
