@@ -1,13 +1,13 @@
 ## {{["VirusTotal Body URL Reputation Decision"].[path]}} URL Detected
-**URL Domain:** {{["Dirname - Body URL Domain"].[dirname]}}
+**URL Domain:** {{["url-dirname-virustotal_url"].[dirname]}}
 
 ### VirusTotal
-**Reputation:** {{["VirusTotal Body URL Report"].[report].[reputation]}}
+**Reputation:** {{["virustotal-url_report"].[report].[reputation]}}
 > **Community Results**
->> Harmless Votes: {{["VirusTotal Body URL Report"].[report].[total_votes].[harmless]}}
->> Malicious Votes: {{["VirusTotal Body URL Report"].[report].[total_votes].[malicious]}}
+>> Harmless Votes: {{["virustotal-url_report"].[report].[total_votes].[harmless]}}
+>> Malicious Votes: {{["virustotal-url_report"].[report].[total_votes].[malicious]}}
 
 > **Analysis Stats**
->> Harmless: {{["VirusTotal Body URL Report"].[report].[last_analysis_stats].[harmless]}}
->> Suspicious: {{["VirusTotal Body URL Report"].[report].[last_analysis_stats].[suspicious]}}
->> Malicious: {{["VirusTotal Body URL Report"].[report].[last_analysis_stats].[malicious]}}
+>> Harmless: {{["virustotal-url_report"].[report].[last_analysis_stats].[harmless]}}
+>> Suspicious: {{["virustotal-url_report"].[report].[last_analysis_stats].[suspicious]}}
+>> Malicious: {{["virustotal-url_report"].[report].[last_analysis_stats].[malicious]}}
