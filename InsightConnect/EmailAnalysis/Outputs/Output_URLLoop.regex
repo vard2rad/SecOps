@@ -1,0 +1,6 @@
+## Harmless URLs
+{{["VirusTotal Body URL Reputation Decision"].[path]}} = "Harmless"
+## Invalid URLs
+{{["VirusTotal Body URL Reputation Decision"].[path]}} = "Invalid"
+## Malicious URLs
+{{["VirusTotal Body URL Reputation Decision"].[path]}} = "Malicious"
